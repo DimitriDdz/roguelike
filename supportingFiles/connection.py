@@ -8,7 +8,7 @@ from storages import SQLiteStorage
 con = sqlite3.connect('rugalik.db')
 cursor = con.cursor()
 
-storage = SQLiteStorage(r"C:\Users\makes\PycharmProjects\2DGame_tgbot\rugalik.db")
+storage = SQLiteStorage("rugalik.db")
 
 bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=storage)
